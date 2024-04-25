@@ -12,11 +12,9 @@
   align-items: center;
 }
 
-
 .statistical-card h3 {
   margin-top: 10px;
   margin-left: 10px;
-  
 }
 
 .statistical-card p {
@@ -29,8 +27,6 @@
   padding: 15px;
   border-radius: 10px;
   align-items: center;
-
-  
 }
 .statistical-card.blue {
   background-color: #007bff;

@@ -1,5 +1,5 @@
 /* HistoricalData.css */
-.historical-data{
+.historical-data {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
@@ -10,7 +10,6 @@
   border-radius: 5px;
   padding: 15px;
   margin: 20px;
-  
 }
 
 .statistical-card h3 {
@@ -39,9 +38,9 @@
 .statistical-card.red {
   background-color: #dc3545;
 }
-.historical-data.blue{
+.historical-data.blue {
   background-color: #007bff;
 }
-.data.historical-data.blue{
+.data.historical-data.blue {
   background-color: #007bff;
 }
