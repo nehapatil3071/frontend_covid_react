@@ -1,0 +1,44 @@
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0px;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 17px;
+  border: 1px solid #ffffff;
+  width: 800px;
+  
+}
+
+.date-tab{
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 17px;
+  border: 1px solid #ffffff;
+  margin-left: 10px;
+  background-color: #ffffff;
+  
+}
+
+.react-datepicker {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 17px;
+  border: 1px solid #ffffff;
+  margin-left: 10px;
+  background-color: #ffffff;
+}
+
+
+.react-datepicker:hover {
+  border-color: #007bff; 
+}
+
+.react-datepicker__triangle {
+  border-bottom-color: #ccc; 
+}
