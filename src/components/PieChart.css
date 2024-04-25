@@ -1,0 +1,11 @@
+.pie-chart-container{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 400px;
+  height: 400px;
+}
+.Doughnut-Chart data{
+    height: 400px;
+    width: 400px;
+}

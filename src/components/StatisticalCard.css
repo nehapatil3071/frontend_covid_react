@@ -1,0 +1,45 @@
+/* src/components/StatisticalCard.css */
+
+.statistical-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 350px;
+  border: none;
+  padding: 0;
+  height: 60px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+
+.statistical-card h3 {
+  margin-top: 10px;
+  margin-left: 10px;
+  
+}
+
+.statistical-card p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  border: white;
+  background-color: white;
+  height: 30px;
+  padding: 15px;
+  border-radius: 10px;
+  align-items: center;
+
+  
+}
+.statistical-card.blue {
+  background-color: #007bff;
+}
+
+.statistical-card.green {
+  background-color: #28a745;
+}
+
+.statistical-card.red {
+  background-color: #dc3545;
+}

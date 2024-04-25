@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
 
-function App() {
+import React, { useState } from 'react';
+import './App.css';
+import CountryDropdown from './components/CountryDropdown';
+import HistoricalData from './components/HistoricalData';
+import DoughnutChart from './components/DoughnutChart';
+import LineChart from './components/LineChart';
+
+const App = () => {
+  const [selectedCountry, setSelectedCountry] = useState('United States');
+
+  const handleSelectCountry = countryCode => {
+    setSelectedCountry(countryCode);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='main'>
+      <header>
+        <h1>COVID-19 and Population Dashboard</h1>
       </header>
+      <div className="container">
+        <div className="dropdown-container">
+          <CountryDropdown onSelectCountry={handleSelectCountry} />
+        </div>
+        <HistoricalData selectedCountry={selectedCountry} />
+        <div className='chart'>
+        <LineChart selectedCountry={selectedCountry} />
+        <DoughnutChart selectedCountry={selectedCountry} /> 
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
